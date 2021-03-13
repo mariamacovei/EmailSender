@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>All emails</title>
+</head>
+<body>
+
+<a th:href="@{/}" class="link link_index">Send email:</a>
+
+<div class="page">
+    <div class="container">
+        <div class="main" th:each="element : ${emailsSent}">
+            <div class="form__group">
+<!--                <p th:text="'ID: ' + ${element.getId()}" id="id">example: 1</p>-->
+                <p th:text="'To: ' + ${element.getTo()}" id="to">example@gmail.com</p>
+                <p th:text="'Subject: ' + ${element.getSubject()}" id="subject">Hello subject</p>
+                <p th:text="'Content: ' + ${element.getContent()}" id="content">Hello content</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

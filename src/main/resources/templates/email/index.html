@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Email</title>
+    </head>
+    <body>
+
+    <a th:href="@{/emailsSent}" class="link link_allEmails">List emails:</a>
+
+        <div class="page">
+            <div class="container">
+                <main class="main">
+                    <form th:action="@{/sendEmail}" th:method="post" th:object = ${newEmail}>
+                        <div class="form__title">
+                            <h1>Send Message</h1>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="form_to">To</label>
+                            <input class="form__input" th:field="*{to}" type="email" id="form_to" name="to" placeholder="example@gmail.com" required minlength="5">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="form_subject">Subject</label>
+                            <input class="form__input" th:field="*{subject}" type="text" id="form_subject" name="subject" placeholder="Write subject" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="content">Text</label>
+                            <textarea class="form__textarea" th:field="*{content}" type="text" id="content" name="content" placeholder="Write your message" required></textarea>
+                        </div>
+                        <div class="form__group">
+                            <label for="photo">Attachement</label>
+                            <input type="file" name="attachement" id="photo" value="alege file">
+                        </div>
+
+                        <input class="btn btn__send" type="submit" value="Trimite"/>
+
+                    </form>
+                </main>
+            </div>
+        </div>
+        
+    </body>
+</html>
