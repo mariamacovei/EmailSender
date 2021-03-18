@@ -26,7 +26,7 @@ public class EmailController {
 
     @GetMapping("/list")
     public String showsAllEmailsSent(Model model) {
-        model.addAttribute("listOfemails", emailRepository.readListOfMessages());
+        model.addAttribute("listOfemails", emailRepository.readInbox());
         return "/email/allEmails";
     }
 

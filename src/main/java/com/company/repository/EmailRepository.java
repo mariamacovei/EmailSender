@@ -45,28 +45,26 @@ public class EmailRepository {
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email.getTo()));
             message.setSubject(email.getSubject());
 
-            //3) create MimeBodyPart object and set your message text
             BodyPart messageBodyPart1 = new MimeBodyPart();
             messageBodyPart1.setText(email.getContent());
 
-            //4) create new MimeBodyPart object and set DataHandler object to this object
             MimeBodyPart messageBodyPart2 = new MimeBodyPart();
-
             DataSource source = new FileDataSource(new File(file.getOriginalFilename()));
             byte[] sourceBytes = file.getBytes();
             OutputStream sourceOS = source.getOutputStream();
             sourceOS.write(sourceBytes);
+
             messageBodyPart2.setDataHandler(new DataHandler(source));
             messageBodyPart2.setDisposition(MimeBodyPart.ATTACHMENT);
             messageBodyPart2.setFileName(file.getOriginalFilename());
+            //create Multipart object and add MimeBodyPart objects to this object
 
-            //5) create Multipart object and add MimeBodyPart objects to this object
             Multipart multipart = new MimeMultipart();
             multipart.addBodyPart(messageBodyPart1);
             multipart.addBodyPart(messageBodyPart2);
-
-            //6) set the multiplart object to the message object
+            //set the multiplart object to the message object
             message.setContent(multipart);
+
 
             Transport.send(message);
             System.out.println("Message was sent");
@@ -77,10 +75,10 @@ public class EmailRepository {
             e.printStackTrace();
         }
     }
- //test
-    public List<Email> readListOfMessages() {
-        List<Email> listOfMessege = new ArrayList<>();
 
+
+    public List<Email> readInbox() {
+        List<Email> listOfMessege = new ArrayList<>();
         Properties props = new Properties();
 
         try {
