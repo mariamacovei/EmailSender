@@ -1,0 +1,45 @@
+Administrator - all
+Accountant
+Manager
+Handler:
+
++:
+Assistent
+
+
+Dashboard - all
+Credits :
+	? 1. Csv export (accountant, assistent), +asssistent-
+	2. Change handlers (manager),+
+	3. Change handler (manager) - credit view,
+	4. Edit ref, applic date, start date, closed date - assistent, manager, admin+
+        ? 5. Edit component - limit assistent
+	6. Add payment - accountant+
+	? 7. Credit status > Paid    delete guarantors - just admin nu se poate
+	? 8. Credit status > Paid    delete contract details - just admin
+	9. Postpone - manager, handler+
+	10. Fair - manager, handler+
+	11. Close - manager, accountant+
+	12. Overdue - manager, accountant+
+	13. Collection - manager, accountant+
+	
+contacts - 
+	1. Import (assistent),
+	2. Add to black list (contact view) - (handler, manager)-
+	3. Switch type ,  delete - admin
+	4. ASP sync - 1/6 sync - for all, check box (forced) - for admin, manager
+
+	
+import payjment - accountant+
+reports - manager, accountant+
+manage - manager (credit type, user bonus, process settings,  extensions) +
+
+
+sign out automat - < 1h
+
+
+	
+	
+	
+	
+	

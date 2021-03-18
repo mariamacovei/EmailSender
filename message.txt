@@ -1,0 +1,61 @@
+Inainte de a proiecta o interfata, trebuie sa gasim raspunsul la intrebarea: "Cine este utilizatorul?". S-ar putea sa nu ne placa de el... 
+
+Un aspect important in proiectarea interfetei este cel referitor la cunoasterea utilizatorului, trebuind identificate caracteristicile populatiei de utilizatori care va folosi software-ul dezvoltat: 
+
+virsta, gen, etnicitate 
+
+educatie 
+
+abilitati fizice 
+
+experienta generala in utilizarea calculatorului (eventual, a platformei-tinta a aplicatiei) 
+
+abilitati (skills): usurinta de a tasta, de a citi etc. 
+
+experienta in domeniu 
+
+experienta in ceea ce priveste tipul software-ului dezvoltat 
+
+mediul de lucru si alti factori sociali 
+
+relatii cu alte persoane si sabloane de comunicare (communication patterns) 
+
+De retinut: multe aplicatii au numeroase tipuri de utilizatori. Un exemplu este o aplicatie Web de comunicare on-line folosita in contextul jocurilor olimpice, principalele categorii de utilizatori fiind atletii, prietenii si familiile acestora, personalul de administrare, spectatorii, ziaristii etc. 
+
+De asemenea, trebuie sa ne folosim imaginatia! 
+
+Tehnicile privind cunoasterea utilizatorilor recurg la: 
+
+chestionare 
+
+interviuri 
+
+observatii (directe sau indirecte) 
+
+Impedimente: dezvoltatorii si utilizatorii finali sunt izolati, uzual, unii de ceilalti (suportul tehnic se poate interpune intre utilizatori si dezvoltatorii propriu-zisi; similar, sectorul de marketing). Unii utilizatori nu pot fi usor contactati sau nu vor sa fie contactati (e.g., medici, manageri etc.). 
+
+Deseori, se realizeaza diverse scenarii privind interactiunea dintre utilizator si programul conceput: 
+
+Ce anume doreste utilizatorul de la sistemul proiectat? 
+
+Realizarea de investigatii pas-cu-pas: 
+
+ce doreste sa vada: schite, capturi-ecran etc. 
+
+ce doreste sa realizeze: utilizarea tastaturii, mouse-ului etc. 
+
+ce gindeste utilizatorul 
+
+In practica va fi nevoie de parcurs urmatorii pasi : 
+
+fundamentarea proiectului (design rationale) - descriere detaliata a istoricului si scopurilor proiectului de realizare a interfetei, document necesar pentru reutilizarea unui proiect deja existent, coordonarea participantilor la un proiect de durata, facilitarea intretinerii si utilizarii ulterioare. 
+
+proiectarea iterativa - proces ciclic de rezolvare a problemelor inerente ale specificarii incomplete a cerintelor printr-o dezvoltare incrementala a interfetei. 
+
+Poate coopta beneficiarii (de la distribuitorii de software pina la utilizatorii finali), care devin evaluatori ai interfetei pe parcursul dezvoltarii ei. 
+
+prototipizarea - ofera posibilitatea de a exprima conceptia de ansamblu a interfetei, inca din primele faze ale proiectarii. 
+
+ 
+
+ 

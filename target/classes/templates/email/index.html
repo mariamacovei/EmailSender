@@ -7,12 +7,12 @@
     </head>
     <body>
 
-    <a th:href="@{/emailsSent}" class="link link_allEmails">List emails:</a>
+    <a th:href="@{/emails/list}" class="link link_allEmails">List emails:</a>
 
         <div class="page">
             <div class="container">
                 <main class="main">
-                    <form th:action="@{/sendEmail}" th:method="post" th:object = ${newEmail}>
+                    <form th:action="@{/emails/send}" enctype="multipart/form-data" th:method="post" th:object = ${newEmail} > <!--autocomplete="off"-->
                         <div class="form__title">
                             <h1>Send Message</h1>
                         </div>
@@ -29,8 +29,8 @@
                             <textarea class="form__textarea" th:field="*{content}" type="text" id="content" name="content" placeholder="Write your message" required></textarea>
                         </div>
                         <div class="form__group">
-                            <label for="photo">Attachement</label>
-                            <input type="file" name="attachement" id="photo" value="alege file">
+                            <label for="photo">Attachment</label>
+                            <input type="file" name="attachment" id="photo" value="alege file">
                         </div>
 
                         <input class="btn btn__send" type="submit" value="Trimite"/>

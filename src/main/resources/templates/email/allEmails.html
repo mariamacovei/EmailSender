@@ -7,14 +7,13 @@
 </head>
 <body>
 
-<a th:href="@{/}" class="link link_index">Send email:</a>
+<a th:href="@{/emails}" class="link link_index">Send email:</a>
 
 <div class="page">
     <div class="container">
-        <div class="main" th:each="element : ${emailsSent}">
+        <div class="main" th:each="element : ${listOfemails}">
             <div class="form__group">
-<!--                <p th:text="'ID: ' + ${element.getId()}" id="id">example: 1</p>-->
-                <p th:text="'To: ' + ${element.getTo()}" id="to">example@gmail.com</p>
+                <p th:text="'From: ' + ${element.getFrom()}" id="from">example@gmail.com</p>
                 <p th:text="'Subject: ' + ${element.getSubject()}" id="subject">Hello subject</p>
                 <p th:text="'Content: ' + ${element.getContent()}" id="content">Hello content</p>
             </div>
