@@ -77,7 +77,7 @@ public class EmailRepository {
             e.printStackTrace();
         }
     }
-
+ //test
     public List<Email> readListOfMessages() {
         List<Email> listOfMessege = new ArrayList<>();
 
